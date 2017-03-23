@@ -2,3 +2,350 @@
 body {
   background: #FFF;
 }
+
+$c1: #2db9aa;
+$c9:#999;
+.w1200 {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.head {
+  &-tip {
+    display: inline-block;
+    float: left;
+  }
+  &-top {
+    height: 32px;
+    background: #f0f0f0;
+    line-height: 32px;
+    font-size: 12px;
+    a {
+      color: #666;
+      padding: 0 5px;
+      &:hover {
+        text-decoration: underline
+      }
+    }
+  }
+  &-share {
+    display: inline-block;
+    float: right;
+    a {
+      margin-left: 5px;
+    }
+    .icon {
+      display: inline-block;
+      vertical-align: middle;
+      margin-top: -2px;
+      margin-right: 4px;
+      width: 22px;
+      height: 22px;
+      background: url(../img/icon1.png) center center no-repeat;
+      &.icon-2 {
+        background-image: url(../img/icon4.png)
+      }
+      &.icon-3 {
+        background-image: url(../img/icon3.png)
+      }
+    }
+  }
+  &-logo {
+    height: 100px;
+    .logo {
+      float: left;
+      margin-top: 12px;
+    }
+    .logo-txt {
+      margin-top: 35px;
+      display: inline-block;
+      margin-left: 20px;
+      float: left;
+    }
+    .head-tel {
+      float: right;
+      padding-left: 54px;
+      margin-top: 28px;
+      height: 50px;
+      background: url(../img/tel.png) 0 center no-repeat;
+      span {
+        display: block;
+        font-size: 20px;
+        color: #333;
+        &.num {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  &-nav {
+    height: 60px;
+    background: $c1;
+    font-size: 0;
+    li {
+      display: inline-block;
+      font-size: 0;
+      position: relative;
+      float: left;
+      a {
+        display: inline-block;
+        font-size: 16px;
+        color: #fff;
+        height: 60px;
+        line-height: 60px;
+        transition: .3s all;
+        padding: 0 44px;
+      }
+      .erji {
+        display: none;
+        font-size: 16px;
+      }
+      &:hover {
+        background: #fff;
+        *background: #f0ffff;
+        a {
+          color: $c1;
+        }
+        .erji {
+          position: absolute;
+          border-top: 1px $c1 solid;
+          z-index: 10000;
+          top: 60px;
+          left: 0;
+          display: inline-block;
+          background: #fff;
+          a {
+            color: $c9;
+            height: 40px;
+            line-height: 40px;
+            &:hover {
+              color: $c1;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.banner {
+  height: 400px;
+  background: #ccc;
+}
+
+.warp {
+  margin-top: 20px;
+}
+
+.tip-ga {
+  height: 58px;
+  background: $c1;
+  color: #fff;
+  padding: 0 270px 0 300px;
+  position: relative;
+  .t {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: inline-block;
+    width: 270px;
+    height: 100%;
+    background: url(../img/t1.jpg)
+  }
+  .btn-bm {
+    display: inline-block;
+    position: absolute;
+    width: 195px;
+    height: 100%;
+    right: 0;
+    top: 0;
+    background: url(../img/btn.jpg)
+  }
+  .content {
+    span {
+      display: inline-block;
+      height: 58px;
+      line-height: 58px;
+      font-size: 18px;
+      width: 50%;
+      overflow: hidden;
+    }
+  }
+}
+
+.com-title {
+  font-size: 32px;
+  color: #000;
+  text-align: center;
+  span {
+    display: inline-block;
+    position: relative;
+    height: 50px;
+    line-height: 50px;
+    i.line {
+      position: absolute;
+      height: 2px;
+      background: $c1;
+      display: inline-block;
+      width: 52px;
+      bottom: 0;
+      left: 50%;
+      margin-left: -26px;
+    }
+  }
+}
+
+.fourTips {
+  margin-top: 30px;
+  text-align: center;
+  .con {
+    margin-top: 20px;
+  }
+  .item {
+    display: inline-block;
+    height: 240px;
+    width: 255px;
+    font-size: 0;
+    margin: 0 15px;
+    float: left;
+    dt {
+      width: 200px;
+      height: 156px;
+      display: inline-block;
+    }
+    dd {
+      font-size: 14px;
+      color: #333;
+      height: 56px;
+      line-height: 28px;
+      overflow: hidden;
+    }
+    &.item-1 dt {
+      background: url(../img/f1.png) center center no-repeat
+    }
+    &.item-2 dt {
+      background: url(../img/f2.png) center center no-repeat
+    }
+    &.item-3 dt {
+      background: url(../img/f3.png) center center no-repeat
+    }
+    &.item-4 dt {
+      background: url(../img/f4.png) center center no-repeat
+    }
+  }
+}
+
+.bg1 {
+  background: #f0f0f0;
+}
+
+.zj-team {
+  padding: 20px 0 40px;
+  *overflow: hidden;
+  .item {
+    font-size: 14px;
+    color: #666;
+    width: 590px;
+    *width: 380px;
+    overflow: hidden;
+    height: 258px;
+    background: #fff;
+    margin-top: 20px;
+    display: inline;
+    float: left;
+    position: relative;
+    padding-left: 210px;
+    box-shadow: 6px 6px 6px #ccc;
+    .img {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+    .title {
+      padding: 10px 20px;
+      font-size: 30px;
+      color: #000;
+    }
+    .txt {
+      padding: 0 20px;
+      line-height: 26px;
+      height: 130px;
+      overflow: hidden;
+    }
+    .btn {
+      padding: 10px 20px;
+      text-align: right;
+      .seemore {
+        width: 64px;
+        height: 24px;
+        line-height: 24px;
+        text-align: center;
+        color: #fff;
+        background: $c1;
+        font-size: 14px;
+        padding: 0;
+        display: inline-block;
+        cursor: pointer;
+      }
+    }
+    &.item-2,
+    &.item-4 {
+      margin-left: 20px;
+    }
+  }
+}
+
+.studentShare {
+  .con {
+    margin-top: 20px;
+  }
+  .video-area {
+    width: 552px;
+    float: left;
+    .video {
+      width: 100%;
+      height: 316px;
+      box-shadow: 3px 3px 3px #ccc;
+      background: #f1f1f1;
+      .video-warp {
+        height: 284px;
+      }
+      .video-title {
+        text-align: center;
+        color: #fff;
+        background: $c1;
+        height: 32px;
+        line-height: 32px;
+        overflow: hidden;
+      }
+    }
+    .video-txt {
+      font-size: 16px;
+      color: #000;
+      line-height: 30px;
+      height: 120px;
+      overflow: hidden;
+      padding: 0 10px;
+      margin-top: 20px;
+    }
+  }
+  .stu-list {
+    float: right;
+    width: 648px;
+    .items {
+      width: 310px;
+      height: 230px;
+      float: left;
+      display: inline;
+      margin: 0 0 20px 14px;
+      .title {
+        height: 32px;
+        line-height: 32px;
+        color: #fff;
+        background: $c1;
+        overflow: hidden;
+        text-align: center;
+      }
+    }
+  }
+}

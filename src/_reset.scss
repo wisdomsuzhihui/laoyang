@@ -1,3 +1,4 @@
+
 /************
  * 共用样式
  ************/
@@ -19,7 +20,6 @@
 }
 
 html {
-  font-size: 62.5%;
   color: #222;
   font-family: "微软雅黑";
 }
@@ -39,6 +39,8 @@ textarea {
 html,
 body {
   min-height: 100%; // overflow-x: hidden;
+  padding: 0;
+  margin: 0;
 }
 
 ::selection {
@@ -81,6 +83,7 @@ input[type='password'] {
 
 img {
   vertical-align: top;
+  border: none;
 }
 
 .ellipsis {
@@ -97,4 +100,8 @@ img {
 
 .clearfix:after {
   clear: both;
+}
+
+a {
+  text-decoration: none;
 }
