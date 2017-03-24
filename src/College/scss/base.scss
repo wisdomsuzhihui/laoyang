@@ -5,6 +5,8 @@ body {
 
 $c1: #2db9aa;
 $c9:#999;
+$c6:#666;
+$lc:#ccc;
 .w1200 {
   width: 1200px;
   margin: 0 auto;
@@ -237,6 +239,7 @@ $c9:#999;
 
 .bg1 {
   background: #f0f0f0;
+  overflow: hidden;
 }
 
 .zj-team {
@@ -348,4 +351,261 @@ $c9:#999;
       }
     }
   }
+}
+
+.about {
+  padding: 20px;
+  background: #fff;
+  margin-top: 30px;
+  margin-bottom: 36px;
+  overflow: hidden;
+  .img {
+    float: left;
+    width: 515px;
+    height: 290px;
+    border: 2px $c1 solid;
+    border-radius: 2px;
+  }
+  .info {
+    float: right;
+    width: 620px;
+    margin-right: 10px;
+    .title {
+      height: 60px;
+      line-height: 60px;
+      font-size: 32px;
+      .seemore {
+        float: right;
+        display: inline-block;
+        background: $c1;
+        color: #fff;
+        font-size: 14px;
+        width: 64px;
+        height: 24px;
+        line-height: 24px;
+        vertical-align: middle;
+        text-align: center;
+        margin-top: 14px;
+      }
+    }
+    .txt {
+      line-height: 24px;
+      font-size: 14px;
+      height: 220px;
+      overflow: hidden;
+      p {
+        padding: 6px 0 10px;
+      }
+    }
+  }
+}
+
+.news-area {
+  .seemore {
+    width: 60px;
+    height: 24px;
+    line-height: 24px;
+    color: #fff;
+    text-align: center;
+    background: $c1;
+    font-size: 12px;
+    display: inline-block;
+  }
+  padding: 30px 0 40px;
+  .tab-area {
+    float: left;
+    height: 448px;
+    width: 766px;
+    border: 1px $lc solid;
+    .tab-bar {
+      height: 50px;
+      a {
+        display: inline-block;
+        width: 140px;
+        height: 50px;
+        text-align: center;
+        color: #000;
+        line-height: 50px;
+        font-size: 26px;
+        margin-left: -1px;
+        position: relative;
+        top: -1px;
+        transition: .3s all;
+        &.cur,
+        &:hover {
+          color: #fff;
+          background: $c1;
+        }
+      }
+    }
+    .tab-box {
+      padding: 10px;
+      .top-item {
+        height: 182px;
+        .img {
+          height: 182px;
+          width: 324px;
+          float: left;
+        }
+        .con {
+          width: 400px;
+          height: 128px;
+          float: right;
+          font-size: 14px;
+          color: $c6;
+          line-height: 20px;
+          .title {
+            font-size: 20px;
+            color: #000;
+            display: block;
+            height: 50px;
+            line-height: 50px;
+            &:hover {
+              color: $c1;
+            }
+          }
+          .txt {
+            height: 80px;
+            overflow: hidden;
+          }
+          .more {
+            margin-top: 20px;
+            text-align: right;
+          }
+        }
+      }
+      .line {
+        overflow: hidden;
+        clear: both;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 20px;
+        border-top: 1px #f0f0f0 solid;
+      }
+      ul {
+        margin-top: 10px;
+        li {
+          a {
+            display: block;
+            height: 30px;
+            line-height: 30px;
+            position: relative;
+            color: #000;
+            span {
+              position: relative;
+              z-index: 2;
+            }
+            span.title {
+              display: inline-block;
+              height: 100%;
+              background: #fff;
+              padding-right: 10px;
+            }
+            span.data {
+              float: right;
+              padding-left: 10px;
+              display: inline-block;
+              height: 100%;
+              background: #fff;
+            }
+            .line {
+              position: absolute;
+              z-index: 1;
+              border-top: 1px #000 dashed;
+              left: 0;
+              top: 14px;
+              display: block;
+              margin: 0;
+            }
+            &:hover {
+              color: $c1;
+              .line {
+                border-color: $c1;
+              }
+            }
+          }
+        }
+      }
+      .more {
+        text-align: right;
+        margin-top: 10px;
+      }
+    }
+  }
+  .online-form {
+    width: 424px;
+    float: right;
+    height: 448px;
+    border: 1px $lc solid;
+    .title {
+      height: 50px;
+      line-height: 50px;
+      font-size: 26px;
+      color: #fff;
+      background: $c1;
+      margin-left: -1px;
+      margin-top: -1px;
+      padding: 0 15px;
+    }
+    .con {
+      padding: 10px 15px;
+      color: #000;
+      font-size: 16px;
+      input,
+      textarea {
+        border: 1px #cecece solid;
+        border-radius: 2px;
+      }
+      .item {
+        margin-top: 10px;
+      }
+      span {
+        display: inline-block;
+        &.t-title {
+          width: 86px;
+          float: left;
+          vertical-align: top;
+          height: 40px;
+          line-height: 40px;
+          text-align: right;
+        }
+        &.t-val {
+          float: right;
+          width: 290px;
+          display: inline-block;
+          label {
+            display: inline-block;
+            vertical-align: middle;
+            line-height: 40px;
+          }
+          input[type='text'] {
+            width: 280px;
+            height: 40px;
+            line-height: normal;
+            padding: 0 4px;
+          }
+          textarea {
+            width: 280px;
+            line-height: 24px;
+            padding: 0 4px;
+          }
+          .btn-submit {
+            cursor: pointer;
+            background: $c1;
+            color: #fff;
+            font-size: 20px;
+            padding: 6px 36px;
+            border: none;
+            border-radius: 10px;
+            margin-left: 70px;
+          }
+        }
+      }
+    }
+  }
+}
+
+//- 底部
+.foot {
+  .foot-nav {}
 }

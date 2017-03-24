@@ -1,4 +1,3 @@
-
 /************
  * 共用样式
  ************/
@@ -15,10 +14,9 @@
 
 /*基本默认值  */
 
-[v-cloak] {
-  display: none;
-}
-
+// [v-cloak] {
+//   display: none;
+// }
 html {
   color: #222;
   font-family: "微软雅黑";
@@ -104,4 +102,5 @@ img {
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
