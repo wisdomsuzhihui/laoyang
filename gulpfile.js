@@ -76,7 +76,7 @@ gulp.task('plugs', function () {
     .pipe(debug({
       title: '编译：'
     }))
-    .pipe(gulp.dest('dist/**/plugs'))
+    .pipe(gulp.dest('dist'))
 })
 
 //jade

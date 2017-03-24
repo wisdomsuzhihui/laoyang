@@ -1,0 +1,1 @@
+var dgdAd=$("#dgd-ad");dgdAd.owlCarousel({items:1,loop:!0,autoplay:!0,autoplayTimeout:5e3,autoplayHoverPause:!0});

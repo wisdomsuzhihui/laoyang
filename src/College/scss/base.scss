@@ -131,8 +131,22 @@ $lc:#ccc;
 }
 
 .banner {
-  height: 400px;
-  background: #ccc;
+  position: relative;
+  .owl-theme .owl-nav.disabled+.owl-dots {
+    margin-top: 0;
+    position: absolute;
+    bottom: 6px;
+    width: 100%;
+  }
+  .owl-theme .owl-dots .owl-dot span {
+    background: none;
+    border: 2px #fff solid;
+  }
+  .owl-theme .owl-dots .owl-dot.active span,
+  .owl-theme .owl-dots .owl-dot:hover span {
+    border-color: $c1;
+    background: $c1;
+  }
 }
 
 .warp {
@@ -607,5 +621,64 @@ $lc:#ccc;
 
 //- 底部
 .foot {
-  .foot-nav {}
+  padding-bottom: 30px;
+  .foot-nav {
+    text-align: center;
+    color: #fff;
+    height: 44px;
+    line-height: 44px;
+    background: $c6;
+    a {
+      color: #fff;
+      padding: 0 42px;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  &-con {
+    padding: 20px 150px;
+  }
+  &-logo-area {
+    float: left;
+  }
+  &-logo {
+    float: left;
+  }
+  &-info {
+    float: right;
+    margin-left: 90px;
+    .title {
+      font-size: 24px;
+      color: #000;
+    }
+    .item {
+      line-height: 36px;
+      font-size: 14px;
+      color: $c6;
+    }
+  }
+  &-ewm {
+    float: right;
+    color: #333;
+    font-size: 12px;
+    text-align: center;
+  }
+  &-link {
+    .w1200 {
+      border-top: 1px #999 solid;
+    }
+  }
+  &-link-warp {
+    font-size: 12px;
+    padding: 4px 100px;
+    a,
+    span {
+      color: #666;
+      font-size: 14px;
+    }
+    a {
+      padding: 0 5px;
+    }
+  }
 }
