@@ -1,0 +1,67 @@
+extends ./shade/layout
+block content
+  .banner#dgd-ad 
+
+
+  //- 主体
+  .warp
+    .w1200
+      .tip-ga
+        span.t
+        .content
+          span.item 第四期 钟表鉴定估价班 3月21日
+          span.item 第四期 钟表鉴定估价班 3月21日
+        a.btn.btn-bm(href="#",title="立即报名") 
+
+
+      .colleg-nav
+        span 当前位置：
+        a(href="/") 首页
+        |>
+        span.cur 讲师团队
+      .contaier.clearfix
+        .main.teacher-team
+          
+            - var teachList=[{img:'img/tl1.jpg',name:'徐步天',list:['中南典当学院钟表类首席讲师、', '中国钟表协会专业培训组组长、','中国名贵钟表鉴定师职业资格培训课程首席鉴定讲师','名表资深专家，玩表20载，熟知各大小品牌款式、机芯、年代等资料']},{img:'img/tl2.jpg',name:'雷雨春',list:['中国商业联合会洗染专家委员会理事、', '浙江省洗染行业协会常务理事、','浙江省洗染服务消费鉴定委员会专家','名包资深护理专家，安杰利品牌创始人。各大品牌设计顾问了解各大品牌的设计理念等资料']},{img:'img/tl3.jpg',name:'李旸',list:['中南典当学院钟表类首席讲师、', '中国钟表协会专业培训组组长、','中国名贵钟表鉴定师职业资格培训课程首席鉴定讲师','名表资深专家，玩表20载，熟知各大小品牌款式、机芯、年代等资料']},{img:'img/tl4.jpg',name:'徐步天',list:['中国商业联合会洗染专家委员会理事、', '浙江省洗染行业协会常务理事、','浙江省洗染服务消费鉴定委员会专家','名包资深护理专家，安杰利品牌创始人。各大品牌设计顾问了解各大品牌的设计理念等资料']},]
+            -for(var i =0;i<teachList.length; i++)
+              -if(i%2 == 0)
+                .item.t-l.clearfix
+                  .img
+                    img(src="#{teachList[i].img}", alt="")
+                  .info
+                    .title #{teachList[i].name}
+                    ul
+                      each list in teachList[i].list
+                        li #{list}
+              -else
+                .item.t-r.clearfix
+                  .img
+                    img(src="#{teachList[i].img}", alt="")
+                  .info
+                    .title #{teachList[i].name}
+                    ul
+                      each list in teachList[i].list
+                        li #{list}
+
+
+
+
+        .side
+          .side-box.side-gg
+            a(href="#")
+              img(src="img/side-gg.jpg", alt="")
+          //- 热点推荐
+          .side-box.side-hot.mt20
+            .title
+              i.icon.icon-hot
+              span  热点推荐
+            .con 
+              ul
+                - var arr = new Array(15);
+                each item in arr
+                  li
+                    a(href="#").ellipsis
+                      i.icon.point
+                      |工商管理博士（DBA）、经济应用...
+          
+          

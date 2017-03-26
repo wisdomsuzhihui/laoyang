@@ -1,0 +1,64 @@
+extends ./shade/layout
+block content
+  .banner#dgd-ad 
+
+
+  //- 主体
+  .warp
+    .w1200
+      .tip-ga
+        span.t
+        .content
+          span.item 第四期 钟表鉴定估价班 3月21日
+          span.item 第四期 钟表鉴定估价班 3月21日
+        a.btn.btn-bm(href="#",title="立即报名") 
+
+
+      .colleg-nav
+        span 当前位置：
+        a(href="/") 首页
+        |>
+        a(href="/") 关于我们
+        |>
+        span.cur 发展历程
+      .contaier.clearfix
+        .main.studentShareList.connectUs
+          .map
+            img(src="img/map.jpg", alt="")
+
+          .add-list.clearfix
+            -var arrlist = ['深圳总部', '辽宁分院 ','湖南分院 ']
+            each item in arrlist
+              dl.additem
+                dt
+                  span #{item}
+                    i.line
+                dd.
+                  深圳市龙岗区布吉街道吉华路268文化
+                  创意产业园D302（下水径地铁站A出口前行200米）
+                dd.
+                  电       话： 0755-89306006
+                dd.
+                   邮　    箱： jihertech@163.com
+                dd
+                  a.showmap(href="#") 查看地图
+                
+
+        .side
+          .side-box.side-category
+            .title 
+              span 关于我们
+                i.line
+            .con
+              a(href="#") 
+                i.icon
+                |学院介绍  
+              a(href="#") 
+                i.icon
+                |发展历程
+              a(href="#").cur 
+                i.icon
+                |联系我们
+          .side-box.jb-teacher.mt20
+            img(src="img/jb-teacher.jpg", alt="")
+            .title 金牌讲师徐步天

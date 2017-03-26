@@ -1,12 +1,14 @@
 extends ./shade/layout
 block content
   //- banner
-  .banner
-    .owl-carousel.owl-theme#dgd-ad
-      each item in [1,2,3]
-        div.item
-          a(href="#")
-            img(src="img/banner.jpg", alt="")
+  .banner#dgd-ad      
+    //- div.slider.slide-1
+    //-   ul.slider-content(style="left:0")
+    //-     each item in [1,2,3]
+    //-       li
+    //-         a(href="#")
+    //-           img(src="img/banner.jpg", alt="")
+      .btns
   //- 主体
   .warp
     .w1200
@@ -123,6 +125,7 @@ block content
           .video-area
             .video
               .video-warp
+                <embed src='http://player.youku.com/player.php/sid/XMjY0MjA5OTYwMA==/v.swf' allowFullScreen='true' quality='high' width='552' height='284' align='middle' allowScriptAccess='always' type='application/x-shockwave-flash'></embed>
               .video-title 中南典当学院第一期  
             .video-txt.
               商学院主要以世界高端名表、名包、钻石、金铂金等的鉴定、估价、维修、
@@ -154,10 +157,45 @@ block content
           .com-title 
             span 精品课程
               i.line
-          .con
-            .owl-carousel.owl-theme
-              .item
-                a(href="#")
+          .con.slide-warp.clearfix
+            span.prev-btn
+            span.next-btn
+            .slide-content
+              .slide-con.clearfix(style="width:3000px")
+                .item
+                  a(href="#")
+                    .title.ellipsis 钟表鉴定精英班
+                    .img
+                      img(src="img/l1.jpg", alt="")
+                      .txt
+                        .txt-con.
+                          针对各大品牌钟表鉴定，高效快速的将学生
+                          从初级的认识到专家级的飞跃.课程采取高清
+                          大图国内首屈一指的名师授课
+                      .mark
+
+                .item
+                  a(href="#")
+                    .title.ellipsis 名包鉴定精英班
+                    .img
+                      img(src="img/l2.jpg", alt="")
+                      .txt
+                        .txt-con.
+                          针对各大品牌钟表鉴定，高效快速的将学生
+                          从初级的认识到专家级的飞跃.课程采取高清
+                          大图国内首屈一指的名师授课
+                      .mark
+                .item
+                  a(href="#")
+                    .title.ellipsis 二手车鉴定评估班课程
+                    .img
+                      img(src="img/l3.jpg", alt="")
+                      .txt
+                        .txt-con.
+                          针对各大品牌钟表鉴定，高效快速的将学生
+                          从初级的认识到专家级的飞跃.课程采取高清
+                          大图国内首屈一指的名师授课
+                      .mark
                 
     .w1200
       //- 往期回顾
@@ -165,11 +203,25 @@ block content
         .com-title 
           span 往期回顾
             i.line
+        .con.slide-warp.clearfix
+          span.prev-btn
+          span.next-btn
+          .slide-content
+            .slide-con.clearfix(style="width:3000px")
+              .item
+                img(src="img/b1.jpg", alt="")
+              .item
+                img(src="img/b2.jpg", alt="")
+              .item
+                img(src="img/b3.jpg", alt="")
+              .item
+                img(src="img/b4.jpg", alt="")
     .bg1
       .warp.w1200
         //- 中南典当学院
         .about.clearfix
           .img
+            img(src="img/i1.jpg", alt="中南典当学院")
           .info
             .title
               span 中南典当学院
@@ -187,13 +239,13 @@ block content
           .tab-bar
             a(href="javascript:void(0);").cur 公司新闻
             a(href="javascript:void(0);") 行业动态
-          .tab-box
+          .tab-box(style="display:block")
             .top-item.clearfix
               .img
                 a(href="#")
                   img(src="img/info.jpg", alt="")
               .con
-                a(href="#").title 广东省广州市典当协会会长来我院指导工作
+                a(href="#").title.ellipsis 广东省广州市典当协会会长来我院指导工作
                 .txt.
                   中南典当学院 是在各省市典当行业协会的鼎力支持下，由深圳市
                   点当圈科技有限公司、深圳市点当圈文化传播有限公司创立的一
@@ -206,7 +258,31 @@ block content
               each item in [1,2,3,4]
                 li
                   a 
-                    span.title 中南典当学院(以下简称学院)是在各省市典当行业协会
+                    span.title  中南典当学院(以下简称学院)是在各省市典当行业协会
+                    span.data 2017-02-03
+                    i.line
+            .more
+              a.btn.seemore(href="#") 更多 >
+          .tab-box
+            .top-item.clearfix
+              .img
+                a(href="#")
+                  img(src="img/info.jpg", alt="")
+              .con
+                a(href="#").title.ellipsis 行业动态 --广东省广州市典当协会会长来我院指导工作
+                .txt.
+                  中南典当学院 是在各省市典当行业协会的鼎力支持下，由深圳市
+                  点当圈科技有限公司、深圳市点当圈文化传播有限公司创立的一
+                  家着眼于典当行业、拍卖行业、寄卖行业、奢侈品行业以行业文
+                  化、教育为主要研究方向的产学研结合的研.
+                .more
+                  a.btn.seemore(href="#") 更多 >
+            .line
+            ul
+              each item in [1,2,3,4]
+                li
+                  a 
+                    span.title 行业动态 --中南典当学院(以下简称学院)是在各省市典当行业协会
                     span.data 2017-02-03
                     i.line
             .more
@@ -248,3 +324,7 @@ block content
    
    
 
+  
+      
+
+    

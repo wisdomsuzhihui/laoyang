@@ -1,0 +1,72 @@
+extends ./shade/layout
+block content
+  .banner#dgd-ad 
+
+
+  //- 主体
+  .warp
+    .w1200
+      .tip-ga
+        span.t
+        .content
+          span.item 第四期 钟表鉴定估价班 3月21日
+          span.item 第四期 钟表鉴定估价班 3月21日
+        a.btn.btn-bm(href="#",title="立即报名") 
+
+
+      .colleg-nav
+        span 当前位置：
+        a(href="/") 首页
+        |>
+        span.cur 学员分享
+
+      .contaier.clearfix
+        .main.studentShareList
+          each item in [1,2,3,4,1]
+            -var url = 'img/s'+ item +'.jpg';
+            .item.clearfix
+              .img
+                a(href="#")
+                  img(src="#{url}", alt="")
+              .con
+                a.title.ellipsis 【名包】青岛中诚典当有限责任公司
+                .txt.
+                  中南典当学院是在各省市典当行业协会的鼎力支持下，由深圳市点当圈科技有限公司、深圳
+                  市点当圈文化传播有限公司创立的一家着眼于典当行业、拍卖行业、寄卖行业、奢侈品 行业，
+                  以行业文化、教育为主要研究方向的产学研结合的研究机构…..
+                .seemore
+                  a(href="#") 【查看详情】
+
+          .page
+            span.previous <<
+            span.pageitem.cur 1
+            a.pageitem(href="#") 2
+            a.pageitem(href="#") 3
+            a.pageitem(href="#") 4
+            span ...
+            a.pageitem(href="#") 18
+            a.next(href="#", title="下一页") >>
+
+        .side
+          .side-box.side-gg
+            a(href="#")
+              img(src="img/side-gg.jpg", alt="")
+          //- 热点推荐
+          .side-box.side-hot.mt20
+            .title
+              i.icon.icon-hot
+              span  热点推荐
+            .con 
+              ul
+                - var arr = new Array(15);
+                each item in arr
+                  li
+                    a(href="#").ellipsis
+                      i.icon.point
+                      |工商管理博士（DBA）、经济应用...
+          
+          .side-box.jb-teacher.mt20
+            img(src="img/jb-teacher.jpg", alt="")
+            .title 金牌讲师徐步天
+
+    

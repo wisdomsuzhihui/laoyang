@@ -6,8 +6,8 @@
   <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
   <title>Document</title>
   <link href="./scss/base.css" rel="stylesheet"/>
-  <link href="./plugs/owl.carousel.min.css" rel="stylesheet"/>
-  <link href="./plugs/owl.theme.default.css" rel="stylesheet"/>
+  <script src="./plugs/jquery.min.js"></script>
+  <script src="./js/slide.js"></script>
 </head>
 <body>
   <div class="head">
@@ -37,12 +37,7 @@
     </div>
   </div>
   <!--==================================================-->
-  <div class="banner">
-    <div id="dgd-ad" class="owl-carousel owl-theme">
-      <div class="item"><a href="#"><img src="img/banner.jpg" alt=""/></a></div>
-      <div class="item"><a href="#"><img src="img/banner.jpg" alt=""/></a></div>
-      <div class="item"><a href="#"><img src="img/banner.jpg" alt=""/></a></div>
-    </div>
+  <div id="dgd-ad" class="banner">     
   </div>
   <div class="warp">
     <div class="w1200">
@@ -159,7 +154,7 @@
         <div class="con clearfix">
           <div class="video-area">
             <div class="video">
-              <div class="video-warp"></div>
+              <div class="video-warp"><embed src='http://player.youku.com/player.php/sid/XMjY0MjA5OTYwMA==/v.swf' allowFullScreen='true' quality='high' width='552' height='284' align='middle' allowScriptAccess='always' type='application/x-shockwave-flash'></embed></div>
               <div class="video-title">中南典当学院第一期  </div>
             </div>
             <div class="video-txt">
@@ -194,9 +189,46 @@
       <div class="warp w1200">
         <div class="jp-class">
           <div class="com-title"> <span>精品课程<i class="line"></i></span></div>
-          <div class="con">
-            <div class="owl-carousel owl-theme">
-              <div class="item"><a href="#"></a></div>
+          <div class="con slide-warp clearfix"><span class="prev-btn"></span><span class="next-btn"></span>
+            <div class="slide-content">
+              <div style="width:3000px" class="slide-con clearfix">
+                <div class="item"><a href="#">
+                    <div class="title ellipsis">钟表鉴定精英班</div>
+                    <div class="img"><img src="img/l1.jpg" alt=""/>
+                      <div class="txt">
+                        <div class="txt-con">
+                          针对各大品牌钟表鉴定，高效快速的将学生
+                          从初级的认识到专家级的飞跃.课程采取高清
+                          大图国内首屈一指的名师授课
+                        </div>
+                      </div>
+                      <div class="mark"></div>
+                    </div></a></div>
+                <div class="item"><a href="#">
+                    <div class="title ellipsis">名包鉴定精英班</div>
+                    <div class="img"><img src="img/l2.jpg" alt=""/>
+                      <div class="txt">
+                        <div class="txt-con">
+                          针对各大品牌钟表鉴定，高效快速的将学生
+                          从初级的认识到专家级的飞跃.课程采取高清
+                          大图国内首屈一指的名师授课
+                        </div>
+                      </div>
+                      <div class="mark"></div>
+                    </div></a></div>
+                <div class="item"><a href="#">
+                    <div class="title ellipsis">二手车鉴定评估班课程</div>
+                    <div class="img"><img src="img/l3.jpg" alt=""/>
+                      <div class="txt">
+                        <div class="txt-con">
+                          针对各大品牌钟表鉴定，高效快速的将学生
+                          从初级的认识到专家级的飞跃.课程采取高清
+                          大图国内首屈一指的名师授课
+                        </div>
+                      </div>
+                      <div class="mark"></div>
+                    </div></a></div>
+              </div>
             </div>
           </div>
         </div>
@@ -205,12 +237,22 @@
     <div class="w1200">
       <div class="history">
         <div class="com-title"> <span>往期回顾<i class="line"></i></span></div>
+        <div class="con slide-warp clearfix"><span class="prev-btn"></span><span class="next-btn"></span>
+          <div class="slide-content">
+            <div style="width:3000px" class="slide-con clearfix">
+              <div class="item"><img src="img/b1.jpg" alt=""/></div>
+              <div class="item"><img src="img/b2.jpg" alt=""/></div>
+              <div class="item"><img src="img/b3.jpg" alt=""/></div>
+              <div class="item"><img src="img/b4.jpg" alt=""/></div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div class="bg1">
       <div class="warp w1200">
         <div class="about clearfix">
-          <div class="img"></div>
+          <div class="img"><img src="img/i1.jpg" alt="中南典当学院"/></div>
           <div class="info">
             <div class="title"><span>中南典当学院</span><a class="btn seemore">更多 ></a></div>
             <div class="txt">
@@ -225,10 +267,10 @@
       <div class="news-area clearfix">
         <div class="tab-area">
           <div class="tab-bar"><a href="javascript:void(0);" class="cur">公司新闻</a><a href="javascript:void(0);">行业动态</a></div>
-          <div class="tab-box">
+          <div style="display:block" class="tab-box">
             <div class="top-item clearfix">
               <div class="img"><a href="#"><img src="img/info.jpg" alt=""/></a></div>
-              <div class="con"><a href="#" class="title">广东省广州市典当协会会长来我院指导工作</a>
+              <div class="con"><a href="#" class="title ellipsis">广东省广州市典当协会会长来我院指导工作</a>
                 <div class="txt">
                   中南典当学院 是在各省市典当行业协会的鼎力支持下，由深圳市
                   点当圈科技有限公司、深圳市点当圈文化传播有限公司创立的一
@@ -240,10 +282,32 @@
             </div>
             <div class="line"></div>
             <ul>
-              <li><a> <span class="title">中南典当学院(以下简称学院)是在各省市典当行业协会</span><span class="data">2017-02-03</span><i class="line"></i></a></li>
-              <li><a> <span class="title">中南典当学院(以下简称学院)是在各省市典当行业协会</span><span class="data">2017-02-03</span><i class="line"></i></a></li>
-              <li><a> <span class="title">中南典当学院(以下简称学院)是在各省市典当行业协会</span><span class="data">2017-02-03</span><i class="line"></i></a></li>
-              <li><a> <span class="title">中南典当学院(以下简称学院)是在各省市典当行业协会</span><span class="data">2017-02-03</span><i class="line"></i></a></li>
+              <li><a> <span class="title"> 中南典当学院(以下简称学院)是在各省市典当行业协会</span><span class="data">2017-02-03</span><i class="line"></i></a></li>
+              <li><a> <span class="title"> 中南典当学院(以下简称学院)是在各省市典当行业协会</span><span class="data">2017-02-03</span><i class="line"></i></a></li>
+              <li><a> <span class="title"> 中南典当学院(以下简称学院)是在各省市典当行业协会</span><span class="data">2017-02-03</span><i class="line"></i></a></li>
+              <li><a> <span class="title"> 中南典当学院(以下简称学院)是在各省市典当行业协会</span><span class="data">2017-02-03</span><i class="line"></i></a></li>
+            </ul>
+            <div class="more"><a href="#" class="btn seemore">更多 ></a></div>
+          </div>
+          <div class="tab-box">
+            <div class="top-item clearfix">
+              <div class="img"><a href="#"><img src="img/info.jpg" alt=""/></a></div>
+              <div class="con"><a href="#" class="title ellipsis">行业动态 --广东省广州市典当协会会长来我院指导工作</a>
+                <div class="txt">
+                  中南典当学院 是在各省市典当行业协会的鼎力支持下，由深圳市
+                  点当圈科技有限公司、深圳市点当圈文化传播有限公司创立的一
+                  家着眼于典当行业、拍卖行业、寄卖行业、奢侈品行业以行业文
+                  化、教育为主要研究方向的产学研结合的研.
+                </div>
+                <div class="more"><a href="#" class="btn seemore">更多 ></a></div>
+              </div>
+            </div>
+            <div class="line"></div>
+            <ul>
+              <li><a> <span class="title">行业动态 --中南典当学院(以下简称学院)是在各省市典当行业协会</span><span class="data">2017-02-03</span><i class="line"></i></a></li>
+              <li><a> <span class="title">行业动态 --中南典当学院(以下简称学院)是在各省市典当行业协会</span><span class="data">2017-02-03</span><i class="line"></i></a></li>
+              <li><a> <span class="title">行业动态 --中南典当学院(以下简称学院)是在各省市典当行业协会</span><span class="data">2017-02-03</span><i class="line"></i></a></li>
+              <li><a> <span class="title">行业动态 --中南典当学院(以下简称学院)是在各省市典当行业协会</span><span class="data">2017-02-03</span><i class="line"></i></a></li>
             </ul>
             <div class="more"><a href="#" class="btn seemore">更多 ></a></div>
           </div>
@@ -297,11 +361,22 @@
     </div>
     <div class="foot-link">
       <div class="w1200">
-        <div class="foot-link-warp"><span>友情链接：</span><a href="#"></a><a href="#">单仁资讯集团 </a>|<a href="#">移动全网班 </a>|<a href="#">网络营销培训 </a>|<a href="#">单仁听杂志 </a>|<a href="#">牛商网 </a>|<a href="#">单仁学院 </a>|<a href="#">O2O培训 </a>|<a href="#">深圳广告公司</a>|<a href="#">移动营销课程</a>|<a href="#">电子商务培训</a>|<a href="#">全网</a></div>
+        <div class="foot-link-warp"><span>友情链接：</span><a href="#"></a><a href="#">单仁资讯集团 </a>|<a href="#">移动全网班 </a>|<a href="#">网络营销培训 </a>|<a href="#">单仁听杂志 </a>|<a href="#">牛商网 </a>|<a href="#">单仁学院 </a>|<a href="#">O2O培训 </a>|<a href="#">深圳广告公司</a>|<a href="#">移动营销课程</a>|<a href="#">电子商务培训</a>|<a href="#">
+            全网
+            </a></div>
       </div>
     </div>
+    <div class="scrollTop">
+      <div class="item backTop"></div><a class="item qqLink"></a>
+      <div class="item wx"></div>
+      <dl class="item tel">
+        <dt></dt>
+        <dd>
+          0755-
+          89306006
+        </dd>
+      </dl>
+    </div>
   </div>
-  <script src="./plugs/jquery.min.js"></script>
-  <script src="./plugs/owl.carousel.min.js"></script>
   <script src="./js/common.js"></script>
 </body>

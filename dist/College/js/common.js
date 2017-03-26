@@ -1,1 +1,1 @@
-var dgdAd=$("#dgd-ad");dgdAd.owlCarousel({items:1,loop:!0,autoplay:!0,autoplayTimeout:5e3,autoplayHoverPause:!0});
+!function(){$(".tab-bar a").each(function(a,i){$(i).click(function(){$(i).addClass("cur").siblings("a").removeClass("cur"),$(".tab-box").eq(a).show().siblings(".tab-box").hide()})})}();
