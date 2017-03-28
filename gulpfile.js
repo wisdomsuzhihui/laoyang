@@ -27,7 +27,7 @@ gulp.task('css', function () {
     // 紧凑输出方式 compact
     // 压缩输出方式 compressed
     .pipe(sass({
-      outputStyle: 'compressed'
+      outputStyle: 'compact'
     }).on('error', sass.logError))
     .pipe(autoprefixer({
       browsers: ['last 2 versions', 'Android >= 4.0', 'IE >= 9'],
