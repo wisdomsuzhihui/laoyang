@@ -315,10 +315,14 @@ $lc:#ccc;
     font-size: 0;
     margin: 0 15px;
     float: left;
+    cursor: pointer;
+    perspective: 200px;
     dt {
       width: 200px;
       height: 156px;
       display: inline-block;
+      transition: .8s all;
+      transform-style: preserve-3d
     }
     dd {
       margin-top: 20px;
@@ -328,17 +332,32 @@ $lc:#ccc;
       line-height: 28px;
       overflow: hidden;
     }
+    &.item:hover dt {
+      transform: rotate3d(1, 1, 1, 360deg)
+    }
     &.item-1 dt {
-      background: url(../img/f1.png) center center no-repeat
+      background: url(../img/f1.png) center center no-repeat;
     }
     &.item-2 dt {
-      background: url(../img/f2.png) center center no-repeat
+      background: url(../img/f2.png) center center no-repeat;
     }
     &.item-3 dt {
-      background: url(../img/f3.png) center center no-repeat
+      background: url(../img/f3.png) center center no-repeat;
     }
     &.item-4 dt {
-      background: url(../img/f4.png) center center no-repeat
+      background: url(../img/f4.png) center center no-repeat;
+    }
+    &.item-1:hover dt {
+      background-image: url(../img/f1_c.png);
+    }
+    &.item-2:hover dt {
+      background-image: url(../img/f2_c.png);
+    }
+    &.item-3:hover dt {
+      background-image: url(../img/f3_c.png);
+    }
+    &.item-4:hover dt {
+      background-image: url(../img/f4_c.png);
     }
   }
 }
